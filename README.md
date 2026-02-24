@@ -84,3 +84,7 @@ services:
       DATABASE_URL: postgres://user:pass@host:port/db
 databases:
   - name: sandbox-db
+/Dockerfile
+/app/main.py
+/requirements.txt
+DATABASE_URL=postgresql://user:pass@your-db-host/dbname
