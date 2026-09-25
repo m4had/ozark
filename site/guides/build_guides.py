@@ -145,6 +145,67 @@ GUIDES = [
         "tools": [("../index.html", "Email deliverability check (£19)"), ("../index.html", "Shop legal-info check")],
         "sources": ["Google, Yahoo and Microsoft published sender requirements (2024–2025)", "RFC 7208 (SPF), RFC 6376 (DKIM), RFC 7489 (DMARC)"],
     },
+    {
+        "slug": "hmrc-ebay-vinted-reporting-2026",
+        "img": "mtd.png",
+        "title": "eBay and Vinted HMRC Rules",
+        "h1": "Selling on eBay or Vinted: what HMRC's reporting rules mean for you (2026)",
+        "desc": "Plain-English guide to the online platform reporting rules: the 30-sale / €2,000 threshold, why being reported isn't the same as owing tax, and when the £1,000 trading allowance applies.",
+        "updated": "25 September 2026",
+        "body": """
+<p class="lede">Since January 2024, online marketplaces such as eBay, Vinted, Etsy, Depop and Airbnb collect details of some sellers and send them to HMRC each year. Being reported <strong>does not mean you owe tax</strong>.</p>
+<h2>Who gets reported?</h2>
+<p>A platform reports you if, in a <strong>calendar year</strong>, you make <strong>30 or more sales</strong> or receive <strong>more than €2,000</strong> (about £1,700). It then collects details such as your National Insurance number and sends HMRC your name, address, number of sales and gross takings. Each platform counts separately.</p>
+<h2>Do you owe tax?</h2>
+<ul><li><strong>Selling your own used things</strong> (clothes, furniture, old gadgets), usually for less than you paid, is not trading. There's no income tax on it however many items you sell.</li>
+<li><strong>Trading</strong> means buying or making things to sell at a profit. If your gross trading income is over <strong>£1,000 in a tax year</strong> (6 April to 5 April), you need to register for Self Assessment and report it.</li>
+<li>Under £1,000 of trading income, the <strong>trading allowance</strong> covers it: nothing to report.</li></ul>
+<p>Selling valuable personal items (e.g. a single item over £6,000) can bring capital gains tax rules into play. Check gov.uk if that applies.</p>
+<h2>Am I trading? HMRC's "badges of trade"</h2>
+<p>HMRC looks at things like: whether you bought items intending to resell them, whether you make items to sell, how often you sell the same kind of thing, whether you improve items before selling, and how organised your selling is. No single answer decides it.</p>
+<h2>What to do now</h2>
+<ol><li>Keep a simple record of each sale: date, platform, item, price, what it cost you, fees.</li>
+<li>Mark each sale as a personal item or trading.</li>
+<li>If your trading income passes £1,000 in a tax year, register for Self Assessment by 5 October after the end of that tax year.</li>
+<li>If HMRC writes to you after a platform report, answer the questions. Records showing the items were personal belongings settle most cases.</li></ol>
+""",
+        "faq": [
+            ("Will Vinted or eBay report me to HMRC?", "Only if you make 30 or more sales, or more than €2,000 (about £1,700), on that platform in a calendar year."),
+            ("Do I pay tax on selling my old clothes on Vinted?", "Normally no. Selling your own used belongings isn't trading, so there's no income tax, even if the platform reports you."),
+            ("What is the £1,000 trading allowance?", "If your gross trading income in a tax year is £1,000 or less you don't need to report it. Above that, register for Self Assessment; you can deduct £1,000 or your actual costs."),
+        ],
+        "tools": [("../index.html", "Online Seller & Side-Hustle Tracker"), ("../tools/mtd-checker.html", "Making Tax Digital checker")],
+        "sources": ["gov.uk: Selling online and paying tax (HMRC)", "gov.uk: Tax-free allowances on property and trading income", "The Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023"],
+    },
+    {
+        "slug": "fake-reviews-drip-pricing-dmcc-act",
+        "img": "a11y.png",
+        "title": "Fake Reviews and Hidden Fees",
+        "h1": "Fake reviews and hidden fees: what the DMCC Act means for small online shops",
+        "desc": "Since 6 April 2025 fake reviews and drip pricing are banned in the UK and the CMA can fine businesses directly. A plain-English checklist for small shops.",
+        "updated": "25 September 2026",
+        "body": """
+<p class="lede">The consumer-protection parts of the Digital Markets, Competition and Consumers (DMCC) Act 2024 came into force on <strong>6 April 2025</strong>. Two rules matter to almost every small online shop: the ban on <strong>fake reviews</strong> and the ban on <strong>drip pricing</strong>.</p>
+<h2>Fake reviews</h2>
+<p>You must not write, commission or buy reviews that don't reflect a genuine experience, offer undisclosed incentives for reviews, hide negative reviews, or present reviews misleadingly. If you publish reviews, take reasonable steps to prevent and remove fake ones. A short written review policy helps.</p>
+<h2>Drip pricing</h2>
+<p>The first price a customer sees must include every <strong>unavoidable fixed fee</strong> (booking, admin or service fees). Delivery charges that vary should be clearly flagged up front with how they're calculated. Consumer prices must include VAT.</p>
+<h2>Why act now</h2>
+<p>The Competition and Markets Authority can now fine businesses directly: up to <strong>10% of global turnover or £300,000, whichever is higher</strong>. Trading Standards enforce the rules too.</p>
+<h2>15-minute self-audit</h2>
+<ol><li>View a product as a new customer: is the first price the real price, apart from clearly explained delivery?</li>
+<li>Could you explain where every review on your site came from?</li>
+<li>Do your review-request emails reward only positive reviews? (Don't.)</li>
+<li>Are your business name, address and email on the site?</li></ol>
+""",
+        "faq": [
+            ("Are fake reviews illegal in the UK?", "Yes. Since 6 April 2025 the DMCC Act makes commissioning, writing or publishing fake reviews an automatically unfair commercial practice."),
+            ("What is drip pricing?", "Showing a headline price and adding unavoidable fees later in checkout. It is banned: fixed mandatory fees must be in the first price shown."),
+            ("How big are the fines under the DMCC Act?", "The CMA can fine businesses up to 10% of global turnover or £300,000, whichever is higher."),
+        ],
+        "tools": [("../index.html", "DMCC Act guide for shops (PDF)"), ("../index.html", "Shop legal-info check")],
+        "sources": ["legislation.gov.uk: Digital Markets, Competition and Consumers Act 2024, Part 4", "CMA: Unfair commercial practices guidance (2025)"],
+    },
 ]
 
 

@@ -1,0 +1,21 @@
+name: Plain-English accessibility scan
+description: Scan a site (e.g. your preview deploy) against WCAG 2.2 A/AA with axe-core and attach a plain-English PDF report. Optionally fail on serious issues.
+inputs:
+  url: { description: URL to scan (same-site links are followed), required: true }
+  pages: { description: Maximum pages to scan, required: false, default: "10" }
+  fail-on: { description: "Fail the job at this impact or worse: critical, serious, moderate, or none", required: false, default: "critical" }
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with: { node-version: 22 }
+    - shell: bash
+      working-directory: ${{ github.action_path }}
+      run: npm ci --silent && npx playwright install --with-deps chromium
+    - shell: bash
+      run: node "${{ github.action_path }}/audit.mjs" "${{ inputs.url }}" --pages "${{ inputs.pages }}" --out a11y-report
+    - uses: actions/upload-artifact@v4
+      if: always()
+      with: { name: accessibility-report, path: a11y-report }
+    - shell: bash
+      run: node "${{ github.action_path }}/gate.mjs" a11y-report/results.json "${{ inputs.fail-on }}"

@@ -96,6 +96,30 @@
       "gbp": 29,
       "usdc": "40",
       "file": null
+    },
+    "construction": {
+      "name": "Construction Kit: CIS tracker + reverse charge invoice",
+      "gbp": 15,
+      "usdc": "21",
+      "file": "Construction_Kit_CIS_and_Reverse_Charge.xlsx"
+    },
+    "seller": {
+      "name": "Online Seller & Side-Hustle Tracker",
+      "gbp": 9,
+      "usdc": "13",
+      "file": "Online_Seller_and_Side_Hustle_Tracker.xlsx"
+    },
+    "firstlet": {
+      "name": "First-Let Landlord Pack (checklist + inventory)",
+      "gbp": 7,
+      "usdc": "10",
+      "file": "First_Let_Landlord_Pack_England.pdf"
+    },
+    "dmcc": {
+      "name": "Fake reviews & hidden fees: DMCC Act guide for shops",
+      "gbp": 9,
+      "usdc": "13",
+      "file": "DMCC_Act_Guide_for_Online_Shops.pdf"
     }
   }
 }
