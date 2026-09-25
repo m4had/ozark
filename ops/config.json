@@ -72,6 +72,12 @@
       "gbp": 29,
       "usdc": "40",
       "file": null
+    },
+    "course": {
+      "name": "MTD for Sole Traders \u2013 written course",
+      "gbp": 19,
+      "usdc": "26",
+      "file": "MTD_for_Sole_Traders_Course_Written_Edition.pdf"
     }
   }
 }
