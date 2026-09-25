@@ -1,0 +1,24 @@
+name: Uptime and SSL monitor
+on:
+  schedule: [{ cron: "*/15 * * * *" }]
+  workflow_dispatch:
+permissions: { issues: write, contents: read }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: run
+        run: node check.mjs sites.txt
+      - if: steps.run.outputs.failed == 'true'
+        uses: actions/github-script@v7
+        env: { BODY: "${{ steps.run.outputs.body }}" }
+        with:
+          script: |
+            const title = 'Site problem detected';
+            const open = await github.rest.issues.listForRepo({ ...context.repo, state: 'open', labels: 'monitor' });
+            if (open.data.some((i) => i.title === title)) {
+              await github.rest.issues.createComment({ ...context.repo, issue_number: open.data[0].number, body: process.env.BODY });
+            } else {
+              await github.rest.issues.create({ ...context.repo, title, body: process.env.BODY, labels: ['monitor'] });
+            }

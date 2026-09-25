@@ -1,0 +1,9 @@
+name: Plain changelog
+description: Generate grouped release notes from Conventional Commits and prepend them to CHANGELOG.md
+inputs:
+  version: { description: Version heading, required: false, default: Unreleased }
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: node "${{ github.action_path }}/changelog.mjs" --version "${{ inputs.version }}" --prepend CHANGELOG.md

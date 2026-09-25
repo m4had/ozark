@@ -1,0 +1,77 @@
+{
+  "_comment": "Owner-set limits. null = not yet set by owner -> ALL spend is blocked until filled in.",
+  "currency": "GBP",
+  "monthly_budget_gbp": null,
+  "per_experiment_budget_gbp": null,
+  "single_spend_approval_threshold_gbp": null,
+  "scale_roi_threshold": null,
+  "tax_set_aside_rate": 0.4,
+  "_tax_comment": "Owner said assume 20-40% until confirmed; using the conservative 40% end.",
+  "payout_address_on_file": "0xE52739159fB0762bcBeD4bAe9f97644b4A348a25",
+  "shop": {
+    "_comment": "UK law (Consumer Contracts Regs 2013, E-Commerce Regs 2002) requires online sellers to show their name, a geographic address and an email. The site will not build until these are filled in.",
+    "seller_legal_name": "kingfish77",
+    "seller_address": "Birmingham, United Kingdom",
+    "contact_email": "mahadabedin09@gmail.com",
+    "_address_note": "Owner chose to show town only for privacy (2026-09-25). UK law expects a full geographic address; a business address service would make this compliant."
+  },
+  "crypto_checkout": {
+    "_comment": "Customers pay USDC straight to the owner's wallet. Set network_confirmed to true only after the owner confirms the wallet can receive USDC on this network.",
+    "address": "0xE52739159fB0762bcBeD4bAe9f97644b4A348a25",
+    "network": "base",
+    "token": "USDC",
+    "network_confirmed": true,
+    "wallet_type": "Coinbase Wallet (owner confirmed receives USDC on Base, 2026-09-25)"
+  },
+  "catalog": {
+    "_comment": "usdc prices are about 1.35x the GBP price, rounded up. Review if GBP/USD moves.",
+    "mtd": {
+      "name": "MTD Ready workbook 2026-27",
+      "gbp": 14,
+      "usdc": "19",
+      "file": "MTD_Ready_Workbook_2026-27.xlsx"
+    },
+    "landlord": {
+      "name": "Landlord compliance tracker (England)",
+      "gbp": 15,
+      "usdc": "21",
+      "file": "Landlord_Compliance_Tracker_England.xlsx"
+    },
+    "cashflow": {
+      "name": "Cash-flow & VAT toolkit",
+      "gbp": 15,
+      "usdc": "21",
+      "file": "Cashflow_and_VAT_Toolkit_UK.xlsx"
+    },
+    "invoice": {
+      "name": "Quote & invoice kit",
+      "gbp": 9,
+      "usdc": "13",
+      "file": "Quote_and_Invoice_Kit_UK.xlsx"
+    },
+    "planner": {
+      "name": "Small-business year planner 2026-27",
+      "gbp": 5,
+      "usdc": "7",
+      "file": "UK_Small_Business_Year_Planner_2026-27.pdf"
+    },
+    "prompts": {
+      "name": "15 AI prompts for UK sole traders",
+      "gbp": 5,
+      "usdc": "7",
+      "file": "AI_Prompts_for_UK_Sole_Traders.pdf"
+    },
+    "a11y": {
+      "name": "Website accessibility report",
+      "gbp": 49,
+      "usdc": "67",
+      "file": null
+    },
+    "cookie": {
+      "name": "Cookie consent check",
+      "gbp": 29,
+      "usdc": "40",
+      "file": null
+    }
+  }
+}

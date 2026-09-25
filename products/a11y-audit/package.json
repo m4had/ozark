@@ -1,0 +1,15 @@
+{
+  "name": "a11y-audit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Automated WCAG 2.2 scan (axe-core) + plain-English PDF report",
+  "scripts": {
+    "audit": "node audit.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "axe-core": "^4.10.0",
+    "playwright": "1.56.1"
+  }
+}

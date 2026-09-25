@@ -1,0 +1,22 @@
+date,stream,kind,category,amount_gbp,description,approval_ref
+2026-09-25,_operator,action,other,0.00,"Phase 1 discovery W39: 30 ideas scored; Phase 2 plans for #1, #2, #12 sent for approval",
+2026-09-25,_operator,action,other,0.00,Owner supplied payout address 0xE527...8a25 (EIP-55 checksum verified); stored in config.json,
+2026-09-25,_operator,action,other,0.00,"Owner approved plans ('i approve all 30 plans'); A/B/C proceed to build. Of other ideas: #17 #22 #29 not pursued (hard rule 1 / legal), rest queued as Phase 4 replacements",owner chat 2026-09-25
+2026-09-25,A,action,other,0.00,Built dist/MTD_Ready_Workbook_2026-27.xlsx + site/mtd.html; formulas verified in LibreOffice,
+2026-09-25,B,action,other,0.00,Built dist/Landlord_Compliance_Tracker_England.xlsx + site/landlord.html; formulas verified in LibreOffice,
+2026-09-25,C,action,other,0.00,Built products/a11y-audit scanner (axe-core 4.13) + PDF report + site/accessibility.html; test passes,
+2026-09-25,_operator,action,other,0.00,"Owner said 'start now'; prepared launch kit (listings, covers, site build + Pages deploy). Blocked on owner: payment account + links",
+2026-09-25,_operator,action,other,0.00,Owner: 'start building all 30 plans and deploy them'. Built wave 1 (D-M). Declined #17 #20 #22 #29; #8 #9 #10 #15 #16 #18 #24 #26 blocked on owner inputs,owner chat 2026-09-25
+2026-09-25,D,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,E,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,F,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,G,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,H,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,I,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,J,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,K,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,L,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,M,action,other,0.00,Built (wave 1); £0 spend,
+2026-09-25,_operator,action,other,0.00,"Owner: all payments in USDC direct to 0xE527...8a25, skip payment-account steps. Built crypto checkout (Base USDC, browser verification); site build gated on seller details + network confirmation",owner chat 2026-09-25
+2026-09-25,_operator,action,other,0.00,Owner supplied trading name kingfish77 + contact email; asked for free hosting (GitHub Pages),
+2026-09-25,_operator,action,other,0.00,Owner confirmed Coinbase Wallet receives USDC on Base; seller address added; site build passes; merging to main to deploy via GitHub Pages,owner chat 2026-09-25
