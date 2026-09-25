@@ -11,15 +11,17 @@
   "shop": {
     "_comment": "UK law (Consumer Contracts Regs 2013, E-Commerce Regs 2002) requires online sellers to show their name, a geographic address and an email. The site will not build until these are filled in.",
     "seller_legal_name": "kingfish77",
-    "seller_address": null,
-    "contact_email": "mahadabedin09@gmail.com"
+    "seller_address": "Birmingham, United Kingdom",
+    "contact_email": "mahadabedin09@gmail.com",
+    "_address_note": "Owner chose to show town only for privacy (2026-09-25). UK law expects a full geographic address; a business address service would make this compliant."
   },
   "crypto_checkout": {
     "_comment": "Customers pay USDC straight to the owner's wallet. Set network_confirmed to true only after the owner confirms the wallet can receive USDC on this network.",
     "address": "0xE52739159fB0762bcBeD4bAe9f97644b4A348a25",
     "network": "base",
     "token": "USDC",
-    "network_confirmed": false
+    "network_confirmed": true,
+    "wallet_type": "Coinbase Wallet (owner confirmed receives USDC on Base, 2026-09-25)"
   },
   "catalog": {
     "_comment": "usdc prices are about 1.35x the GBP price, rounded up. Review if GBP/USD moves.",

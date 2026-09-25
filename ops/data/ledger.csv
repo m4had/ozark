@@ -19,3 +19,4 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,M,action,other,0.00,Built (wave 1); £0 spend,
 2026-09-25,_operator,action,other,0.00,"Owner: all payments in USDC direct to 0xE527...8a25, skip payment-account steps. Built crypto checkout (Base USDC, browser verification); site build gated on seller details + network confirmation",owner chat 2026-09-25
 2026-09-25,_operator,action,other,0.00,Owner supplied trading name kingfish77 + contact email; asked for free hosting (GitHub Pages),
+2026-09-25,_operator,action,other,0.00,Owner confirmed Coinbase Wallet receives USDC on Base; seller address added; site build passes; merging to main to deploy via GitHub Pages,owner chat 2026-09-25
