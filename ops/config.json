@@ -10,9 +10,9 @@
   "payout_address_on_file": "0xE52739159fB0762bcBeD4bAe9f97644b4A348a25",
   "shop": {
     "_comment": "UK law (Consumer Contracts Regs 2013, E-Commerce Regs 2002) requires online sellers to show their name, a geographic address and an email. The site will not build until these are filled in.",
-    "seller_legal_name": null,
+    "seller_legal_name": "kingfish77",
     "seller_address": null,
-    "contact_email": null
+    "contact_email": "mahadabedin09@gmail.com"
   },
   "crypto_checkout": {
     "_comment": "Customers pay USDC straight to the owner's wallet. Set network_confirmed to true only after the owner confirms the wallet can receive USDC on this network.",
