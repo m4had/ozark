@@ -35,3 +35,4 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,_operator,action,other,0.00,"PR #2 merged; Pages run 36185421925 success. Streams J-Q live, kill clocks start 2026-09-25",
 2026-09-25,_operator,action,other,0.00,"Owner: 'generate traffic'. Added 4 sourced guides (FAQ schema), JSON-LD, og:images, IndexNow on deploy, launch/promotion.md (owner-posted, rules-compliant). No bots/fake traffic (hard rule 1)",owner chat 2026-09-25
 2026-09-25,_operator,action,other,0.00,PR #3 merged; Pages run 36186746134 success; IndexNow HTTP 202 (22 URLs submitted). Guides live,
+2026-09-25,_operator,action,other,0.00,Owner: 'carry on with all 222 queued plans'. Wave 3: 12 queued ideas built as streams R-W (+2 web guides); 202 remain queued; merged overlaps instead of near-duplicate listings,owner chat 2026-09-25

@@ -202,5 +202,77 @@
    "days": 30,
    "min_revenue": 58
   }
+ },
+ {
+  "id": "R",
+  "name": "Construction Kit (CIS + reverse charge)",
+  "idea": "W046,W047,W056",
+  "status": "built; live on next deploy",
+  "launched": null,
+  "price_gbp": 15,
+  "kill": {
+   "days": 30,
+   "min_revenue": 30
+  }
+ },
+ {
+  "id": "S",
+  "name": "Online Seller & Side-Hustle Tracker",
+  "idea": "W058,W088",
+  "status": "built; live on next deploy",
+  "launched": null,
+  "price_gbp": 9,
+  "kill": {
+   "days": 30,
+   "min_revenue": 18
+  }
+ },
+ {
+  "id": "T",
+  "name": "First-Let Landlord Pack (PDF)",
+  "idea": "W096,W097",
+  "status": "built; live on next deploy",
+  "launched": null,
+  "price_gbp": 7,
+  "kill": {
+   "days": 30,
+   "min_revenue": 14
+  }
+ },
+ {
+  "id": "U",
+  "name": "DMCC Act guide for shops (PDF) + free web guide",
+  "idea": "W113,W114,W115",
+  "status": "built; live on next deploy",
+  "launched": null,
+  "price_gbp": 9,
+  "kill": {
+   "days": 30,
+   "min_revenue": 18
+  }
+ },
+ {
+  "id": "V",
+  "name": "Email authentication setup service",
+  "idea": "W171",
+  "status": "built; live on next deploy",
+  "launched": null,
+  "price_gbp": 99,
+  "kill": {
+   "days": 30,
+   "min_revenue": 99
+  }
+ },
+ {
+  "id": "W",
+  "name": "GitHub Action: accessibility scan (free)",
+  "idea": "W166",
+  "status": "built; live on next deploy",
+  "launched": null,
+  "price_gbp": 0,
+  "kill": {
+   "days": 60,
+   "min_referred_sales": 1
+  }
  }
 ]
