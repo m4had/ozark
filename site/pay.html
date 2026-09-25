@@ -1,0 +1,87 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout</title><meta name="robots" content="noindex"><link rel="stylesheet" href="style.css">
+<style>code{word-break:break-all;background:var(--card);padding:2px 4px;border-radius:4px}input{font:inherit;padding:8px;width:100%}
+.ok{background:#e8f5e9;color:#1b5e20;padding:12px;border-radius:8px}.err{background:#fdecea;color:#8a1c1c;padding:12px;border-radius:8px}
+button.btn{border:0;cursor:pointer;font:inherit}</style></head><body>
+<header><a href="index.html">Compliance Kits</a></header><main>
+<h1 id="title">Checkout</h1>
+<div id="app"></div>
+<div id="result" role="status" aria-live="polite"></div>
+</main>
+<footer><p>Sold by SELLER_LEGAL_NAME, SELLER_ADDRESS. Contact: CONTACT_EMAIL.</p>
+<p>Payments are made in USDC directly to the seller's wallet. Crypto payments can't be reversed, so check the network and amount before you send. If a file is faulty or not as described, email us with your transaction link and we'll fix it or refund you in USDC. For digital downloads, the 14-day cancellation right ends when you start the download, which you agree to by downloading.</p></footer>
+<script src="crypto.js"></script><script src="checkout-config.js"></script>
+<script>
+const C = window.CHECKOUT, net = Crypto$.NETWORKS[C.network];
+const key = new URLSearchParams(location.search).get('p');
+const P = C.products[key];
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+
+function show(html, cls) { $('result').innerHTML = `<p class="${cls}">${html}</p>`; }
+
+function deliver(txHash) {
+  const link = net.explorer + txHash;
+  if (P.file) {
+    show(`Payment confirmed ✓ <a class="btn" href="${esc(P.file)}" download>Download ${esc(P.name)}</a><br>
+      Keep your receipt: <a href="${esc(link)}">transaction</a>.`, 'ok');
+  } else {
+    show(`Payment confirmed ✓ Please email <a href="mailto:${esc(C.contact)}?subject=${encodeURIComponent('Order: ' + P.name)}&body=${encodeURIComponent('Transaction: ' + link + '\nWebsite to check: \nI own this site or am authorised to have it tested: yes')}">${esc(C.contact)}</a>
+      with this transaction link and the website address. Your report arrives within 2 working days.`, 'ok');
+  }
+}
+
+async function verify(txHash) {
+  show('Checking the payment on ' + net.name + '…', '');
+  for (let i = 0; i < 40; i++) {
+    try {
+      const receipt = await Crypto$.rpc(net.rpc, 'eth_getTransactionReceipt', [txHash]);
+      if (receipt) {
+        Crypto$.verifyReceipt(receipt, { token: net.usdc, to: C.address, minAmount: P.usdc });
+        return deliver(txHash);
+      }
+    } catch (e) {
+      return show(esc(e.message), 'err');
+    }
+    await new Promise((r) => setTimeout(r, 3000));
+  }
+  show('Still waiting for confirmation. Paste your transaction hash below to check again later.', 'err');
+}
+
+async function payWithWallet() {
+  try {
+    const eth = window.ethereum;
+    const [from] = await eth.request({ method: 'eth_requestAccounts' });
+    await eth.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: '0x' + net.chainId.toString(16) }] });
+    const tx = await eth.request({ method: 'eth_sendTransaction',
+      params: [{ from, to: net.usdc, data: Crypto$.encodeTransfer(C.address, P.usdc) }] });
+    verify(tx);
+  } catch (e) {
+    show(esc(e.message || 'Payment cancelled.'), 'err');
+  }
+}
+
+if (!P) {
+  $('app').innerHTML = '<p>Product not found. <a href="index.html">Back to all products</a>.</p>';
+} else {
+  document.title = 'Checkout – ' + P.name;
+  $('title').textContent = P.name;
+  $('app').innerHTML = `<div class="card"><p class="price">${esc(P.usdc)} USDC <small>(about £${esc(P.gbp)})</small></p>
+    <p>Pay with <strong>USDC on ${esc(net.name)}</strong> only. Other tokens or networks can't be verified and may be lost.</p>
+    ${window.ethereum ? '<button class="btn" id="wallet">Pay with my browser wallet</button>' : '<p>No browser wallet detected. Pay manually below.</p>'}
+    </div>
+    <div class="card"><h2>Pay manually (exchange or mobile wallet)</h2>
+    <ol><li>Send exactly <strong>${esc(P.usdc)} USDC</strong> on the <strong>${esc(net.name)}</strong> network to:<br><code id="addr">${esc(C.address)}</code>
+      <button class="btn" id="copy">Copy address</button></li>
+    <li>Paste the transaction hash here to confirm and unlock your purchase:</li></ol>
+    <label for="tx">Transaction hash</label><input id="tx" placeholder="0x…" autocomplete="off">
+    <button class="btn" id="check">Confirm payment</button></div>`;
+  if ($('wallet')) $('wallet').onclick = payWithWallet;
+  $('copy').onclick = () => navigator.clipboard.writeText(C.address).then(() => { $('copy').textContent = 'Copied'; });
+  $('check').onclick = () => {
+    const h = $('tx').value.trim();
+    if (!/^0x[0-9a-fA-F]{64}$/.test(h)) return show('That doesn\'t look like a transaction hash (0x followed by 64 characters).', 'err');
+    verify(h);
+  };
+}
+</script></body></html>

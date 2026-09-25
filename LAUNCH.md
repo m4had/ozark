@@ -1,14 +1,23 @@
-# Launch checklist (about 20 minutes of your time)
+# Launch checklist – crypto checkout
 
-Everything else is ready. These steps need your identity, so only you can do them.
+Customers pay **USDC on Base** straight to your wallet `0xE52739159fB0762bcBeD4bAe9f97644b4A348a25`.
+You don't need a payment account. The site build stays blocked until items 1 and 2 are done.
 
-1. **Open a Gumroad or Lemon Squeezy account** (about 10 min, with ID checks). Both act as merchant of record and handle VAT for you.
-2. **Create the listings** by pasting from `launch/listings.md`, uploading the files in `dist/` and the covers in `launch/covers/`. Set up C as a service with the two checkout fields.
-3. **Send me:** the 3 product links, your seller name as it should appear on the site, and a contact email.
-   I'll put them in `ops/config.json`. The site then builds and deploys itself (`.github/workflows/pages.yml`).
-4. **One-time GitHub setting:** repo Settings → Pages → Source: *GitHub Actions*. On the free plan, Pages needs a public repo. If you'd rather keep the repo private, use Netlify or Cloudflare Pages instead (also free) with build command `python3 site/build.py` and output `_site`.
-5. **Confirm the launch date.** The 30-day kill clock starts then.
+1. **Confirm your wallet can receive USDC on Base.** Normal wallets with a seed phrase (MetaMask, Coinbase Wallet, Rabby, Ledger) can. A smart-contract wallet may exist on only one network. Then set `crypto_checkout.network_confirmed` to `true` in `ops/config.json`, or just tell me.
+2. **Seller details.** The law (Consumer Contracts Regulations 2013, E-Commerce Regulations 2002) requires a name, a geographic address and an email on the site. Send them to me or fill in `shop` in `ops/config.json`. A business address service is fine if you don't want to show your home address.
+3. **Hosting.** Pick one:
+   - Make the repo private and use Netlify or Cloudflare Pages (free), with build command `python3 site/build.py` and output folder `_site`. **Recommended:** while the repo is public, anyone can download the paid files from GitHub for free.
+   - Keep it public and use GitHub Pages: Settings → Pages → Source: *GitHub Actions*, then merge to `main`.
+4. **Tell me the launch date** so the 30-day kill clocks start.
 
-The store listings work on their own from day one. The website is a bonus for sharing links.
+**How checkout works**
+- The buyer pays from a browser wallet, or sends from an exchange and pastes the transaction hash.
+- The page checks the payment on Base: the right token, sent to your address, for at least the right amount. It then unlocks the download.
+- For services (accessibility report, cookie check), the buyer emails the transaction link and their website address.
 
-**HMRC:** trading income over £1,000 a year means you'll need to register for Self Assessment.
+**Know the limits**
+- There's no server, so a determined person could still find the download files. That's acceptable at £5–£21 prices.
+- The same transaction hash could be reused by someone else.
+- Crypto payments are final. Refunds for faulty files are sent from your wallet by you, never by me.
+
+**Tax.** HMRC treats crypto received for sales as trading income at its £ value on the day you receive it. I record each sale in the ledger at that value, and the monthly report shows how much to set aside for tax.
