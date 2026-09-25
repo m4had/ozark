@@ -31,3 +31,21 @@ test('payments on account', () => {
   assert.deepEqual(C.paymentsOnAccount({ lastBill: 5000, collectedAtSourcePct: 85 }), { required: false, each: 0 });
   assert.deepEqual(C.paymentsOnAccount({ lastBill: 5000, thisYearBill: 6000 }), { required: true, each: 2500, balancing: 1000 });
 });
+
+test('VAT flat rate scheme', () => {
+  const r = C.vatFlatRate({ turnoverExVat: 60000, sectorRatePct: 14.5, goodsInclVat: 800, inputVatReclaimable: 1500 });
+  assert.equal(r.lct, true); assert.equal(r.rate, 16.5); assert.equal(r.frs, 11880); assert.equal(r.standard, 10500); assert.equal(r.saving, -1380);
+  const s = C.vatFlatRate({ turnoverExVat: 60000, sectorRatePct: 14.5, goodsInclVat: 5000, inputVatReclaimable: 500, firstYear: true });
+  assert.equal(s.lct, false); assert.equal(s.rate, 13.5); assert.equal(s.frs, 9720);
+  assert.equal(C.vatFlatRate({ turnoverExVat: 160000, sectorRatePct: 10 }).canJoin, false);
+});
+
+test('VAT threshold rolling 12 months', () => {
+  const r = C.vatThreshold(Array(14).fill(8000));
+  assert.equal(r.rolling[11], 96000); assert.equal(r.overAt, 11); assert.equal(C.vatThreshold(Array(12).fill(7500)).overAt, -1); // exactly 90k is not over
+});
+
+test('use of home flat rate', () => {
+  assert.deepEqual(C.useOfHome([24, 25, 50, 51, 100, 101]).months, [0, 10, 10, 18, 18, 26]);
+  assert.equal(C.useOfHome(Array(12).fill(60)).total, 216);
+});

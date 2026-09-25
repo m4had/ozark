@@ -121,5 +121,9 @@
       "usdc": "13",
       "file": "DMCC_Act_Guide_for_Online_Shops.pdf"
     }
+  },
+  "search": {
+    "_comment": "Paste the Google Search Console verification here: either the meta-tag content value (e.g. 'abc123...') or the HTML file name (e.g. 'google1a2b3c.html').",
+    "google_site_verification": "q1_ggBNXKGYzC4ZI8X55Zhobhn1fwel45nt391rTNvo"
   }
 }

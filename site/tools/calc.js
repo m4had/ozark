@@ -58,6 +58,34 @@ function paymentsOnAccount({ lastBill, collectedAtSourcePct = 0, thisYearBill })
   return out;
 }
 
-const api = { mtdStart, mileageAllowance, latePayment, referenceRate, paymentsOnAccount, REFERENCE_RATES };
+// VAT Flat Rate Scheme vs standard accounting (annual). Limited cost trader: goods (VAT-incl.) under 2% of VAT-incl.
+// turnover or under £1,000 a year -> 16.5%. 1% discount in the first year of VAT registration.
+function vatFlatRate({ turnoverExVat, sectorRatePct, goodsInclVat, inputVatReclaimable, firstYear = false, vatRate = 20 }) {
+  const t = Math.max(0, Number(turnoverExVat) || 0);
+  const gross = t * (1 + vatRate / 100);
+  const goods = Math.max(0, Number(goodsInclVat) || 0);
+  const lct = goods < Math.max(gross * 0.02, 1000);
+  const rate = (lct ? 16.5 : Number(sectorRatePct) || 0) - (firstYear ? 1 : 0);
+  const frs = round2(gross * rate / 100);
+  const standard = round2(t * vatRate / 100 - Math.max(0, Number(inputVatReclaimable) || 0));
+  return { gross: round2(gross), lct, rate, frs, standard, saving: round2(standard - frs), canJoin: t <= 150000 };
+}
+
+// VAT registration: register if taxable turnover in any rolling 12 months goes over £90,000.
+function vatThreshold(monthly, threshold = 90000) {
+  const vals = monthly.map((v) => Math.max(0, Number(v) || 0));
+  const rolling = vals.map((_, i) => vals.slice(Math.max(0, i - 11), i + 1).reduce((a, b) => a + b, 0));
+  const first = rolling.findIndex((r) => r > threshold);
+  return { rolling, overAt: first, latest: rolling[rolling.length - 1] ?? 0, headroom: threshold - (rolling[rolling.length - 1] ?? 0) };
+}
+
+// Simplified expenses: use of home flat rate per month by hours of business use.
+function useOfHome(hoursByMonth) {
+  const rate = (h) => (h >= 101 ? 26 : h >= 51 ? 18 : h >= 25 ? 10 : 0);
+  const months = hoursByMonth.map((h) => rate(Math.max(0, Number(h) || 0)));
+  return { months, total: months.reduce((a, b) => a + b, 0) };
+}
+
+const api = { vatFlatRate, vatThreshold, useOfHome, mtdStart, mileageAllowance, latePayment, referenceRate, paymentsOnAccount, REFERENCE_RATES };
 if (typeof module !== 'undefined') module.exports = api;
 else window.Calc = api;
