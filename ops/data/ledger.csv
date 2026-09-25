@@ -5,3 +5,4 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,A,action,other,0.00,Built dist/MTD_Ready_Workbook_2026-27.xlsx + site/mtd.html; formulas verified in LibreOffice,
 2026-09-25,B,action,other,0.00,Built dist/Landlord_Compliance_Tracker_England.xlsx + site/landlord.html; formulas verified in LibreOffice,
 2026-09-25,C,action,other,0.00,Built products/a11y-audit scanner (axe-core 4.13) + PDF report + site/accessibility.html; test passes,
+2026-09-25,_operator,action,other,0.00,"Owner said 'start now'; prepared launch kit (listings, covers, site build + Pages deploy). Blocked on owner: payment account + links",

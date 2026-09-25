@@ -5,7 +5,17 @@
   "per_experiment_budget_gbp": null,
   "single_spend_approval_threshold_gbp": null,
   "scale_roi_threshold": null,
-  "tax_set_aside_rate": 0.40,
+  "tax_set_aside_rate": 0.4,
   "_tax_comment": "Owner said assume 20-40% until confirmed; using the conservative 40% end.",
-  "payout_address_on_file": "0xE52739159fB0762bcBeD4bAe9f97644b4A348a25"
+  "payout_address_on_file": "0xE52739159fB0762bcBeD4bAe9f97644b4A348a25",
+  "shop": {
+    "_comment": "Fill these in (or send them to Claude). The site will not build while any value is null.",
+    "seller_legal_name": null,
+    "contact_email": null,
+    "payment_links": {
+      "mtd": null,
+      "landlord": null,
+      "a11y": null
+    }
+  }
 }
