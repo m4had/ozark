@@ -7,8 +7,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 BASE = "https://m4had.github.io/ozark/tools/"
 HEAD = '''<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title}</title><meta name="description" content="{desc}"><link rel="canonical" href="{base}{file}"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{base}{file}"><meta property="og:type" content="website">
+<title>{title}</title><meta name="description" content="{desc}"><link rel="canonical" href="{base}{file}"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{base}{file}"><meta property="og:image" content="https://m4had.github.io/ozark/img/mtd.png"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="website">
 <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebApplication","name":"{title}","url":"{base}{file}","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{{"@type":"Offer","price":"0","priceCurrency":"GBP"}}}}</script>
 <style>label{{display:block;margin:12px 0 4px;font-weight:600}}input,select{{font:inherit;padding:8px;width:100%;max-width:280px}}
 fieldset{{border:0;padding:0;margin:0 0 8px}}legend{{font-weight:700;margin-top:10px}}
 table{{border-collapse:collapse;width:100%;margin-top:12px}}td{{padding:8px;border-bottom:1px solid #8884}}td:last-child{{text-align:right}}.big{{font-size:26px;font-weight:700}}</style>
