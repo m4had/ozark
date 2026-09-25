@@ -1,0 +1,251 @@
+id,name,category,tier,setup_cash_gbp,owner_hours,monthly_run_gbp,fee_pct,rev_mid,p_success,weeks_to_first_rev,platform_risk,blocked_on,rejected_reason,monthly_profit,effective_setup,score
+W001,MTD for Income Tax eligibility checker,free tool,A,0,0.5,0,0.0,40,0.35,4,L,,,40.0,10,1.4
+W002,Late-payment interest + compensation calculator (UK B2B),free tool,A,0,0.5,0,0.0,40,0.35,4,L,,,40.0,10,1.4
+W003,HMRC mileage allowance calculator (45p/25p),free tool,A,0,0.5,0,0.0,40,0.35,4,L,,,40.0,10,1.4
+W004,VAT Flat Rate Scheme vs standard calculator,free tool,A,0,0.5,0,0.0,40,0.35,4,L,,,40.0,10,1.4
+W005,VAT registration threshold (rolling 12-month) checker,free tool,A,0,0.5,0,0.0,40,0.35,4,L,,,40.0,10,1.4
+W006,Use-of-home flat rate calculator,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W007,Self Assessment payments on account calculator,free tool,A,0,0.5,0,0.0,40,0.35,4,L,,,40.0,10,1.4
+W008,Dividend vs salary calculator for company directors 2026-27,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W009,"Trading allowance (£1,000) vs actual expenses checker",free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W010,Property allowance vs actual expenses checker,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W011,Rent increase (Section 13) date planner,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W012,Deposit protection 30-day deadline calculator,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W013,Gas safety / EICR renewal date calculator,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W014,Invoice due-date and payment-terms calculator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W015,UK working-days calculator (bank holidays),free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W016,Pro-rata salary calculator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W017,Holiday entitlement calculator (5.6 weeks),free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W018,Statutory redundancy pay calculator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W019,Capital allowances (AIA) quick estimator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W020,Hourly rate calculator for freelancers,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W021,Markup vs margin calculator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W022,Break-even calculator for small shops,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W023,Cash-runway calculator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W024,Student loan repayment on self-employment estimator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W025,Class 2/Class 4 NI explainer calculator,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W026,High income child benefit charge calculator,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W027,Personal allowance taper (£100k) calculator,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W028,EPC minimum rating checker for landlords,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W029,HMO licence need checker (England),free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W030,WCAG colour-contrast checker,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W031,Cookie banner self-check questionnaire,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W032,Invoice legal-fields checker (UK),free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W033,Price-per-unit display checker for online shops,free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W034,Tax-year date converter (6 April),free tool,C,0,0.5,0,0.0,8,0.12,4,L,,,8.0,10,0.096
+W035,MTD quarterly deadline calendar export (.ics),free tool,A,0,0.5,0,0.0,40,0.35,4,L,,,40.0,10,1.4
+W036,MTD for landlords property income workbook,spreadsheet,A,0,1,0,0.02,160,0.3,2,L,,,156.8,15.0,3.136
+W037,MTD workbook for sole trader + landlord combined,spreadsheet,A,0,1,0,0.02,160,0.3,2,L,,,156.8,15.0,3.136
+W038,Joint-owned property income split workbook,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W039,Furnished holiday let transition tracker (post-2025 abolition),spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W040,Section 24 finance-cost restriction estimator,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W041,Rent arrears tracker with Section 8 ground dates,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W042,HMO room-by-room compliance tracker,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W043,Scotland landlord compliance tracker,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W044,Wales landlord compliance tracker (Renting Homes Act),spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W045,Airbnb/short-let income and expense tracker,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W046,CIS subcontractor deductions tracker,spreadsheet,A,0,1,0,0.02,160,0.3,2,L,,,156.8,15.0,3.136
+W047,CIS monthly return prep workbook for contractors,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W048,Payroll-lite workbook for one employee (RTI prep),spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W049,Pension auto-enrolment duties tracker,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W050,Company director loan account tracker,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W051,Limited company dividend voucher + minutes templates,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W052,Confirmation statement and accounts deadline tracker,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W053,Corporation Tax marginal relief estimator,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W054,VAT return prep workbook (standard scheme),spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W055,Cash-accounting VAT scheme workbook,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W056,Domestic reverse charge (construction VAT) invoice kit,spreadsheet,A,0,1,0,0.02,160,0.3,2,L,,,156.8,15.0,3.136
+W057,Etsy seller income + fees reconciler,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W058,eBay/Vinted seller HMRC reporting-rules tracker,spreadsheet,A,0,1,0,0.02,160,0.3,2,L,,,156.8,15.0,3.136
+W059,Amazon FBA fee and profit calculator workbook,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W060,Shopify monthly P&L template,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W061,Freelancer client-profitability tracker,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W062,Time-tracking + invoicing workbook,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W063,Job costing sheet for tradespeople,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W064,Materials price-book for builders,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W065,Van running-costs vs mileage comparison,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W066,Hairdresser/beauty chair-rental income tracker,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W067,Childminder income and expenses workbook,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W068,Driving instructor business workbook,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W069,Personal trainer client + income tracker,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W070,Musician/performer gig income tracker,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W071,Photographer job and kit depreciation workbook,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W072,Cleaner rounds and invoicing workbook,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W073,Dog walker/pet sitter booking + income sheet,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W074,Tutor lessons and income tracker,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W075,Charity/club treasurer accounts workbook,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W076,Community interest company (CIC) report prep,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W077,Grant budget tracker for small charities,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W078,Tenancy deposit dispute evidence log,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W079,Property maintenance schedule (landlords),spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W080,Service-charge budget for small leaseholds,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W081,Home-business insurance renewal tracker,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W082,Subscription/software cost audit sheet,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W083,Business budget vs actual (12 months),spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W084,Debtors ageing report template,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W085,Stock/inventory tracker for makers,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W086,Price increase planner (inflation pass-through),spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W087,Sole trader to limited company comparison model,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W088,"Side-hustle HMRC £1,000 allowance tracker",spreadsheet,A,0,1,0,0.02,160,0.3,2,L,,,156.8,15.0,3.136
+W089,Crypto trading-income vs gains record sheet,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W090,"Rent-a-room scheme (£7,500) tracker",spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W091,Making Tax Digital digital-links checker sheet,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W092,Year-end accountant handover pack,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W093,Receipt log with HMRC categories (mobile-friendly),spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W094,Company car vs mileage allowance comparison,spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W095,Renters' Rights Act landlord guide (plain English),printable/guide,A,0,1,0,0.02,60,0.25,2,L,,,58.8,15.0,0.98
+W096,Section 8 possession grounds quick reference,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W097,New landlord first-let checklist (England),printable/guide,A,0,1,0,0.02,60,0.25,2,L,,,58.8,15.0,0.98
+W098,Tenant move-in/move-out inventory template,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W099,MTD quick-start one-pager (laminate-ready),printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W100,Self-employed tax year checklist 2026-27,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W101,Starting a sole trader business checklist,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W102,Setting up a limited company checklist,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W103,Allowable expenses A–Z for tradespeople,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W104,Allowable expenses A–Z for online sellers,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W105,Allowable expenses A–Z for landlords,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W106,Getting paid on time: letter templates pack,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W107,Small claims court (money claim online) walkthrough,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W108,Terms and conditions starter for tradespeople,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W109,"GDPR basics for sole traders (ICO fee, privacy notice)",printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W110,Privacy notice template for small websites,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W111,Accessibility statement template (EAA-ready),printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W112,Consumer rights refunds cheat sheet for shops,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W113,Fake review ban (DMCC Act) compliance guide for shops,printable/guide,A,0,1,0,0.02,60,0.25,2,L,,,58.8,15.0,0.98
+W114,Drip pricing rules (DMCC Act) guide for online sellers,printable/guide,A,0,1,0,0.02,60,0.25,2,L,,,58.8,15.0,0.98
+W115,Subscription contracts rules guide (DMCC Act),printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W116,Price marking and unit pricing guide,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W117,Food business registration checklist,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W118,Market trader/craft fair checklist,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W119,Home-based business planning permission explainer,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W120,Employing your first person checklist,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W121,Right to work checks guide for employers,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W122,Minimum wage 2026 rates poster,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W123,Year planner 2027-28 (next edition),printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W124,Weekly admin planner for sole traders,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W125,Cash-flow crisis 7-day plan,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W126,Pricing your services worksheet,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W127,Client onboarding checklist for freelancers,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W128,Quote follow-up email scripts,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W129,Scam and invoice-fraud warning signs poster,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W130,Cyber Essentials readiness checklist,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W131,Business continuity one-page plan,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W132,Energy-saving checklist for small premises,printable/guide,C,0,1,0,0.02,10,0.06,2,L,,,9.8,15.0,0.0392
+W133,Landlord tenant-communication templates pack,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W134,Pet request response templates (RRA),printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W135,Broken-link and 404 report,site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W136,Mobile-friendliness report,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W137,Page-speed report with plain-English fixes,site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W138,"SEO basics audit (titles, meta, headings, sitemap)",site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W139,Security headers and HTTPS check,site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W140,"Email deliverability check (SPF, DKIM, DMARC)",site check,A,0,1,2,0.02,200,0.25,3,L,,,194.0,15.0,3.2333333333333334
+W141,"Shop legal-info check (trader identity, returns, T&Cs)",site check,A,0,1,2,0.02,200,0.25,3,L,,,194.0,15.0,3.2333333333333334
+W142,Drip-pricing check for checkout pages (DMCC),site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W143,Image alt-text audit,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W144,Form accessibility audit,site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W145,Accessibility re-scan monitoring (monthly),site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W146,Cookie re-check after site changes (monthly),site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W147,Domain and SSL expiry monitoring for agencies,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W148,Third-party script inventory report,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W149,Privacy-policy vs actual trackers comparison,site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W150,Structured data (schema) check for local businesses,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W151,Google Business Profile completeness check,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W152,PDF accessibility check,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W153,Readability (plain English) score report,site check,C,0,1,2,0.02,30,0.06,3,L,,,27.4,15.0,0.10959999999999999
+W154,Checkout accessibility check for Shopify,site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W155,Email authentication setup (SPF/DKIM/DMARC),service,A,0,10,5,0.02,300,0.15,4,L,,,289.0,150.0,0.28900000000000003
+W156,Accessibility statement writing service,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W157,Cookie consent fix service,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W158,Website legal pages review and rewrite,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W159,Google Business Profile optimisation,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W160,Spreadsheet clean-up and automation,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W161,"MTD bridging setup help (records only, no filing)",service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W162,Etsy shop listing refresh,service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W163,Newsletter setup for small businesses,service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W164,Website migration to static hosting (cost cut),service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W165,Online booking system setup,service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W166,Invoice and payment-reminder automation,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W167,Microsoft 365 / Google Workspace tidy-up,service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W168,Small charity website accessibility fixes,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W169,Menu and allergen info digitisation for cafés,service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W170,Product photo background clean-up (licensed images only),service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W171,Plain-English rewrite of policies and FAQs,service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W172,Translation review coordination (native reviewers),service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W173,Data export and backup setup,service,C,0,10,5,0.02,60,0.05,4,L,,,53.8,150.0,0.017933333333333332
+W174,"Dashboard for landlords (rent roll, arrears)",service,B,0,10,5,0.02,150,0.1,4,L,,,142.0,150.0,0.09466666666666668
+W175,GitHub Action: accessibility scan on pull requests,dev tool,A,0,1,0,0.0,30,0.25,6,L,,,30.0,15.0,0.5
+W176,GitHub Action: broken-link checker,dev tool,B,0,1,0,0.0,15,0.15,6,L,,,15.0,15.0,0.15
+W177,GitHub Action: cookie-before-consent check,dev tool,B,0,1,0,0.0,15,0.15,6,L,,,15.0,15.0,0.15
+W178,CLI: UK bank holiday data (gov.uk JSON) helper,dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W179,npm package: UK tax-year date utilities,dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W180,npm package: UK VAT number format validator,dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W181,npm package: UK postcode format validator,dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W182,Static site starter with legal pages + accessibility,dev tool,B,0,1,0,0.0,15,0.15,6,L,,,15.0,15.0,0.15
+W183,Invoice PDF generator (HTML template),dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W184,Conventional-commit linter (tiny),dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W185,Sitemap generator for static sites,dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W186,Pages deploy template with build gating,dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W187,Uptime monitor: Slack/Discord alerts add-on,dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W188,ICS calendar generator for tax deadlines,dev tool,B,0,1,0,0.0,15,0.15,6,L,,,15.0,15.0,0.15
+W189,Accessibility report PDF template (open source),dev tool,C,0,1,0,0.0,5,0.08,6,L,,,5.0,15.0,0.02666666666666667
+W190,Receipt photo to categorised CSV,micro-SaaS (AI),B,10,6,25,0.03,120,0.1,8,L,Anthropic API key + budget,,91.39999999999999,100.0,0.09139999999999998
+W191,Review-reply drafts for genuine reviews,micro-SaaS (AI),B,10,6,25,0.03,120,0.1,8,L,Anthropic API key + budget,,91.39999999999999,100.0,0.09139999999999998
+W192,Plain-English explainer for HMRC letters,micro-SaaS (AI),A,10,6,25,0.03,250,0.15,8,L,Anthropic API key + budget,,217.5,100.0,0.32625
+W193,Tenancy agreement plain-English summariser,micro-SaaS (AI),B,10,6,25,0.03,120,0.1,8,L,Anthropic API key + budget,,91.39999999999999,100.0,0.09139999999999998
+W194,Bank statement to HMRC-category classifier,micro-SaaS (AI),A,10,6,25,0.03,250,0.15,8,L,Anthropic API key + budget,,217.5,100.0,0.32625
+W195,Accessibility alt-text suggestions (owner approves),micro-SaaS (AI),B,10,6,25,0.03,120,0.1,8,L,Anthropic API key + budget,,91.39999999999999,100.0,0.09139999999999998
+W196,Policy/FAQ writer from owner facts,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W197,Quote-writing assistant for trades,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W198,Job-ad writer with discrimination-law checks,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W199,Invoice data extraction API,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W200,"Product-description writer (facts in, no invented claims)",micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W201,Customer email triage for small shops,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W202,Meeting-notes to action list,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W203,Podcast transcript + show notes,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W204,Grant application first-draft helper,micro-SaaS (AI),C,10,6,25,0.03,40,0.04,8,L,Anthropic API key + budget,,13.799999999999997,100.0,0.00552
+W205,The Deadline newsletter: paid 'landlord edition',content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W206,Monthly UK rule-change digest for accountants,content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W207,Plain-English MTD FAQ hub (hand-written),content,A,0,3,0,0.0,60,0.15,12,L,,,60.0,45.0,0.2
+W208,Renters' Rights Act FAQ hub,content,A,0,3,0,0.0,60,0.15,12,L,,,60.0,45.0,0.2
+W209,DMCC Act consumer-law FAQ hub for shops,content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W210,EAA accessibility FAQ hub for UK exporters,content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W211,Case studies of our own tools (build-in-public log),content,C,0,3,0,0.0,10,0.04,12,L,,,10.0,45.0,0.008888888888888889
+W212,Tax-year-end email course (5 emails),content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W213,Landlord email course (7 emails),content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W214,Accessibility fixes email course for shop owners,content,C,0,3,0,0.0,10,0.04,12,L,,,10.0,45.0,0.008888888888888889
+W215,Glossary of UK tax terms for sole traders,content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W216,Templates gallery (free samples) for SEO,content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W217,Quarterly 'what changed' report PDF,content,C,0,3,0,0.0,10,0.04,12,L,,,10.0,45.0,0.008888888888888889
+W218,Podcast-style audio summaries (disclosed AI voice),content,C,0,3,0,0.0,10,0.04,12,L,,,10.0,45.0,0.008888888888888889
+W219,Comparison pages of HMRC-recognised MTD software (no affiliate),content,B,0,3,0,0.0,30,0.08,12,L,,,30.0,45.0,0.05333333333333333
+W220,Making Tax Digital penalty points tracker,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W221,Landlord MTD quarterly deadline wall planner,printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W222,Renters' Rights Act information-sheet delivery log,spreadsheet,B,0,1,0,0.02,80,0.2,2,L,,,78.4,15.0,1.0453333333333334
+W223,Awaab's Law repairs response-time tracker (social landlords),spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W224,Online marketplace seller 'trader or hobbyist' checker,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W225,UK bank holiday + tax deadline calendar feed,free tool,B,0,0.5,0,0.0,20,0.25,4,L,,,20.0,10,0.5
+W226,"Accessibility quick-wins workshop (recorded, 1 hour)",content,C,0,3,0,0.0,10,0.04,12,L,,,10.0,45.0,0.008888888888888889
+W227,Freelancer IR35 status record sheet (records only),spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W228,Business mileage log (printable),printable/guide,B,0,1,0,0.02,30,0.15,2,L,,,29.4,15.0,0.29399999999999993
+W229,Small shop DMCC Act compliance check,site check,B,0,1,2,0.02,100,0.15,3,L,,,96.0,15.0,0.9599999999999999
+W230,"Invoice template variants for 10 trades (one kit, not 10 listings)",spreadsheet,C,0,1,0,0.02,25,0.08,2,L,,,24.5,15.0,0.13066666666666665
+W231,Bulk AI blog network for ad revenue,content,X,0,3,0,0.0,10,0,12,H,,Scaled low-value AI content: spam (hard rule 1),10.0,45.0,0.0
+W232,Buying/selling reviews or star ratings,service,X,0,10,5,0.02,60,0,4,H,,Illegal under DMCC Act 2024 (hard rule 1),53.8,150.0,0.0
+W233,Social media follower/engagement packages,service,X,0,10,5,0.02,60,0,4,H,,Fake engagement (hard rule 1),53.8,150.0,0.0
+W234,Scraped property or business contact lists,micro-SaaS (AI),X,10,6,25,0.03,40,0,8,H,,Scraping + UK GDPR/PECR (hard rule 1),13.799999999999997,100.0,0.0
+W235,Cold-email blasting service,service,X,0,10,5,0.02,60,0,4,H,,PECR consent rules; spam (hard rule 1),53.8,150.0,0.0
+W236,Tax return filing for clients,service,X,0,10,5,0.02,60,0,4,H,,Needs AML supervision and professional indemnity,53.8,150.0,0.0
+W237,Bookkeeping for clients,service,X,0,10,5,0.02,60,0,4,H,,Needs AML supervision (UK law),53.8,150.0,0.0
+W238,Legal document drafting for consumers,service,X,0,10,5,0.02,60,0,4,H,,Reserved legal activities / liability,53.8,150.0,0.0
+W239,Investment or crypto trading signals,content,X,0,3,0,0.0,10,0,12,H,,FCA-regulated financial promotion,10.0,45.0,0.0
+W240,Crypto payment processing for other merchants,micro-SaaS (AI),X,10,6,25,0.03,40,0,8,H,,FCA cryptoasset registration required,13.799999999999997,100.0,0.0
+W241,AI-written ebooks mass-uploaded to Amazon KDP,printable/guide,X,0,1,0,0.02,10,0,2,H,,Mass AI content against KDP rules (hard rule 1),9.8,15.0,0.0
+W242,Print-on-demand designs from copyrighted characters,printable/guide,X,0,1,0,0.02,10,0,2,H,,Copyright infringement (hard rule 1),9.8,15.0,0.0
+W243,Resold 'PLR' content packs,printable/guide,X,0,1,0,0.02,10,0,2,H,,"Low value, duplicate content (hard rule 1)",9.8,15.0,0.0
+W244,Impersonation-style 'official' HMRC form services,service,X,0,10,5,0.02,60,0,4,H,,"Misleading, impersonates government (hard rule 1)",53.8,150.0,0.0
+W245,Website accessibility overlay widget sold as 'compliance',micro-SaaS (AI),X,10,6,25,0.03,40,0,8,H,,Misleading compliance claim (hard rule 1),13.799999999999997,100.0,0.0
+W246,Essay/coursework writing for students,service,X,0,10,5,0.02,60,0,4,H,,Contract cheating is illegal in England (Skills and Post-16 Education Act 2022),53.8,150.0,0.0
+W247,Auto-generated YouTube Shorts channels,content,X,0,3,0,0.0,10,0,12,H,,"Repetitious AI content, demonetisation (hard rule 1)",10.0,45.0,0.0
+W248,Dropshipping with unverified product claims,service,X,0,10,5,0.02,60,0,4,H,,Misleading claims (hard rule 1),53.8,150.0,0.0
+W249,Airdrop/'earn crypto' referral schemes,content,X,0,3,0,0.0,10,0,12,H,,Misleading promotion (hard rule 1),10.0,45.0,0.0
+W250,Web scraping-as-a-service,micro-SaaS (AI),X,10,6,25,0.03,40,0,8,H,,Breaches site ToS (hard rule 1),13.799999999999997,100.0,0.0

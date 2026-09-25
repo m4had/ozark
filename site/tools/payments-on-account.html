@@ -1,0 +1,17 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Payments on Account Calculator</title><meta name="description" content="Free calculator: do you have to make payments on account, how much are they, and what balancing payment is due."><link rel="canonical" href="https://m4had.github.io/ozark/tools/payments-on-account.html"><meta property="og:title" content="Payments on Account Calculator"><meta property="og:description" content="Free calculator: do you have to make payments on account, how much are they, and what balancing payment is due."><meta property="og:url" content="https://m4had.github.io/ozark/tools/payments-on-account.html"><meta property="og:type" content="website">
+<link rel="stylesheet" href="../style.css">
+<style>label{display:block;margin:12px 0 4px;font-weight:600}input,select{font:inherit;padding:8px;width:100%;max-width:280px}
+fieldset{border:0;padding:0;margin:0 0 8px}legend{font-weight:700;margin-top:10px}
+table{border-collapse:collapse;width:100%;margin-top:12px}td{padding:8px;border-bottom:1px solid #8884}td:last-child{text-align:right}.big{font-size:26px;font-weight:700}</style>
+</head><body><header><a href="../index.html">Compliance Kits</a> · <a href="index.html">Free tools</a></header><main>
+<h1>Self Assessment payments on account calculator</h1><p class="lede">See what you'll pay HMRC on 31 January and 31 July.</p>
+<div class="card"><label for="lb">Last year's Self Assessment bill (income tax + Class 4 NI, £)</label><input id="lb" type="number" min="0" step="1" value="6000"><label for="src">% of your tax collected at source (e.g. PAYE)</label><input id="src" type="number" min="0" max="100" step="1" value="0"><label for="tb">Estimated bill for this year (optional, £)</label><input id="tb" type="number" min="0" step="1" value="7000"><div id="out" aria-live="polite"></div></div>
+<p class="note">Each payment on account is half of last year's bill. You don't make them if last year's bill was under £1,000 or over 80% of your tax was deducted at source. A negative balancing payment means you've overpaid. Checked against gov.uk on 25 September 2026. Not tax advice.</p>
+<div class="card"><strong>Plan ahead.</strong> The <a href="../index.html">Cash-flow &amp; VAT toolkit</a> has rows for your tax set-aside so 31 January isn't a shock.</div>
+</main><footer><p><a href="../terms.html">Terms &amp; returns</a> · <a href="../privacy.html">Privacy &amp; cookies</a> · <a href="../contact.html">Contact</a></p></footer><script src="calc.js"></script><script>
+const $=(id)=>document.getElementById(id);const fmt=(n)=>n.toLocaleString('en-GB',{style:'currency',currency:'GBP'});
+function render(){const r=Calc.paymentsOnAccount({lastBill:$('lb').value,collectedAtSourcePct:$('src').value,thisYearBill:$('tb').value});
+$('out').innerHTML=r.required?`<table><tr><td>1st payment on account (31 January)</td><td>${fmt(r.each)}</td></tr><tr><td>2nd payment on account (31 July)</td><td>${fmt(r.each)}</td></tr>${r.balancing!==undefined?`<tr style="font-weight:700"><td>Balancing payment (next 31 January)</td><td>${fmt(r.balancing)}</td></tr>`:''}</table>`:'<p class="big">No payments on account</p><p>Your last bill was under £1,000, or more than 80% of your tax was collected at source.</p>';}
+document.querySelectorAll('input,select').forEach((el)=>el.addEventListener('input',render));render();
+</script></body></html>

@@ -26,3 +26,9 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,K,action,other,0.00,Built; goes live on next deploy,
 2026-09-25,M,action,other,0.00,Built; goes live on next deploy,
 2026-09-25,_operator,action,other,0.00,"Built private owner portal (claude.ai artifact, db-backed): KPIs, cumulative chart, per-stream P&L + kill clocks, entry log, 30-plan pipeline. Seeded 13 streams, 30 ideas, settings",
+2026-09-25,_operator,action,other,0.00,"Owner: 'create another 250 plans, build and deploy'. Scored 250 (ops/data/ideas_wave2.csv: 25 A, 105 B, 100 C, 20 rejected). Built top 8 as streams N-Q; rest queued behind kill criteria (no mass-build: hard rule 1)",owner chat 2026-09-25
+2026-09-25,N,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,O,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,P,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,Q,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,_operator,action,other,0.00,"Added terms/returns, privacy/cookies and contact pages after own legal-check flagged them missing",
