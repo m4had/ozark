@@ -7,5 +7,5 @@
   "scale_roi_threshold": null,
   "tax_set_aside_rate": 0.40,
   "_tax_comment": "Owner said assume 20-40% until confirmed; using the conservative 40% end.",
-  "payout_address_on_file": null
+  "payout_address_on_file": "0xE52739159fB0762bcBeD4bAe9f97644b4A348a25"
 }
