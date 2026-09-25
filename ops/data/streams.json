@@ -1,1 +1,8 @@
-[]
+[
+  {"id": "A", "name": "MTD Ready workbook", "status": "ready-to-launch", "launched": null, "price_gbp": 14,
+   "kill": {"days": 30, "min_revenue": 50}},
+  {"id": "B", "name": "Landlord compliance tracker (England)", "status": "ready-to-launch", "launched": null, "price_gbp": 15,
+   "kill": {"days": 30, "min_revenue": 40}},
+  {"id": "C", "name": "Website accessibility report", "status": "ready-to-launch", "launched": null, "price_gbp": 49,
+   "kill": {"days": 30, "min_revenue": 98}}
+]

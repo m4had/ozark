@@ -1,3 +1,7 @@
 date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,_operator,action,other,0.00,"Phase 1 discovery W39: 30 ideas scored; Phase 2 plans for #1, #2, #12 sent for approval",
 2026-09-25,_operator,action,other,0.00,Owner supplied payout address 0xE527...8a25 (EIP-55 checksum verified); stored in config.json,
+2026-09-25,_operator,action,other,0.00,"Owner approved plans ('i approve all 30 plans'); A/B/C proceed to build. Of other ideas: #17 #22 #29 not pursued (hard rule 1 / legal), rest queued as Phase 4 replacements",owner chat 2026-09-25
+2026-09-25,A,action,other,0.00,Built dist/MTD_Ready_Workbook_2026-27.xlsx + site/mtd.html; formulas verified in LibreOffice,
+2026-09-25,B,action,other,0.00,Built dist/Landlord_Compliance_Tracker_England.xlsx + site/landlord.html; formulas verified in LibreOffice,
+2026-09-25,C,action,other,0.00,Built products/a11y-audit scanner (axe-core 4.13) + PDF report + site/accessibility.html; test passes,
