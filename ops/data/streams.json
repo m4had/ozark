@@ -1,8 +1,158 @@
 [
-  {"id": "A", "name": "MTD Ready workbook", "status": "ready-to-launch", "launched": null, "price_gbp": 14,
-   "kill": {"days": 30, "min_revenue": 50}},
-  {"id": "B", "name": "Landlord compliance tracker (England)", "status": "ready-to-launch", "launched": null, "price_gbp": 15,
-   "kill": {"days": 30, "min_revenue": 40}},
-  {"id": "C", "name": "Website accessibility report", "status": "ready-to-launch", "launched": null, "price_gbp": 49,
-   "kill": {"days": 30, "min_revenue": 98}}
+ {
+  "id": "A",
+  "name": "MTD Ready workbook",
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 14,
+  "kill": {
+   "days": 30,
+   "min_revenue": 50
+  },
+  "idea": 1
+ },
+ {
+  "id": "B",
+  "name": "Landlord compliance tracker (England)",
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 15,
+  "kill": {
+   "days": 30,
+   "min_revenue": 40
+  },
+  "idea": 2
+ },
+ {
+  "id": "C",
+  "name": "Website accessibility report",
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 49,
+  "kill": {
+   "days": 30,
+   "min_revenue": 98
+  },
+  "idea": 12
+ },
+ {
+  "id": "D",
+  "name": "Cash-flow & VAT toolkit",
+  "idea": 4,
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 15,
+  "kill": {
+   "days": 30,
+   "min_revenue": 30
+  }
+ },
+ {
+  "id": "E",
+  "name": "Quote & invoice kit",
+  "idea": 7,
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 9,
+  "kill": {
+   "days": 30,
+   "min_revenue": 18
+  }
+ },
+ {
+  "id": "F",
+  "name": "Year planner 2026-27 (PDF)",
+  "idea": 3,
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 5,
+  "kill": {
+   "days": 30,
+   "min_revenue": 10
+  }
+ },
+ {
+  "id": "G",
+  "name": "AI prompt pack (PDF)",
+  "idea": 5,
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 5,
+  "kill": {
+   "days": 30,
+   "min_revenue": 10
+  }
+ },
+ {
+  "id": "H",
+  "name": "Cookie consent check",
+  "idea": 13,
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 29,
+  "kill": {
+   "days": 30,
+   "min_revenue": 29
+  }
+ },
+ {
+  "id": "I",
+  "name": "Done-for-you services (a11y fixes, copy, automation, dashboards, AI assistant)",
+  "idea": "23,25,27,28,30",
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": null,
+  "kill": {
+   "days": 30,
+   "min_revenue": 199
+  }
+ },
+ {
+  "id": "J",
+  "name": "MTD video course",
+  "idea": 6,
+  "status": "blocked: owner must record videos",
+  "launched": null,
+  "price_gbp": 39,
+  "kill": {
+   "days": 30,
+   "min_revenue": 39
+  }
+ },
+ {
+  "id": "K",
+  "name": "Newsletter 'The Deadline'",
+  "idea": 19,
+  "status": "blocked: owner newsletter account",
+  "launched": null,
+  "price_gbp": 0,
+  "kill": {
+   "days": 90,
+   "min_subscribers": 100
+  }
+ },
+ {
+  "id": "L",
+  "name": "Free take-home pay calculator (traffic to paid products)",
+  "idea": 21,
+  "status": "ready-to-launch",
+  "launched": null,
+  "price_gbp": 0,
+  "kill": {
+   "days": 60,
+   "min_referred_sales": 1
+  }
+ },
+ {
+  "id": "M",
+  "name": "Uptime/SSL monitor + changelog tool (free, open source, lead-gen)",
+  "idea": "11,14",
+  "status": "built; publish as free repos",
+  "launched": null,
+  "price_gbp": 0,
+  "kill": {
+   "days": 60,
+   "min_referred_sales": 1
+  }
+ }
 ]

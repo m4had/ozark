@@ -15,7 +15,12 @@
     "payment_links": {
       "mtd": null,
       "landlord": null,
-      "a11y": null
+      "a11y": null,
+      "cashflow": null,
+      "invoice": null,
+      "planner": null,
+      "prompts": null,
+      "cookie": null
     }
   }
 }

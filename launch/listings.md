@@ -53,3 +53,16 @@ These are for Gumroad or Lemon Squeezy. For each listing: upload the cover from 
 - **Cover:** `launch/covers/a11y.png`
 - **Description:** use the text on `site/accessibility.html`, including the note that automated tools find only some issues and that this is not a certificate.
 - **Fulfilment:** send me the URL, and I run `node products/a11y-audit/audit.mjs <url> --client "<name>"`, review the report and send you the PDF to email to the customer.
+
+---
+
+## Wave 2 listings (same store)
+| Product | Price | File | One-line summary |
+|---|---|---|---|
+| Cash-flow & VAT Toolkit (UK) | £15 | `dist/Cashflow_and_VAT_Toolkit_UK.xlsx` | 12-month cash-flow forecast, £90k VAT threshold watch, and Flat Rate Scheme vs standard VAT comparison (including the 16.5% limited cost trader test). |
+| Quote & Invoice Kit (UK) | £9 | `dist/Quote_and_Invoice_Kit_UK.xlsx` | Quote and invoice templates with the details UK law requires, VAT per line, and an overdue-invoice log. |
+| UK Small Business Year Planner 2026-27 | £5 | `dist/UK_Small_Business_Year_Planner_2026-27.pdf` | Printable monthly planner with every HMRC and MTD date marked. |
+| 15 AI Prompts for UK Sole Traders | £5 | `dist/AI_Prompts_for_UK_Sole_Traders.pdf` | Copy-and-paste prompts for chasing payment, quotes, reviews and admin, plus rules for using AI safely. |
+| Cookie Consent Check | £29 | service; I run `products/a11y-audit/cookie-check.mjs` | Shows which analytics and advertising cookies load before visitors consent, and how to fix it. Automated check, not legal advice. |
+
+Every listing must say "Created with AI assistance and checked by a person." The spreadsheets and PDFs must carry the not-tax/legal-advice line, which is already inside each file.

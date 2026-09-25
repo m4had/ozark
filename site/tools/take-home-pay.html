@@ -1,0 +1,29 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Take-Home Pay Calculator</title><meta name="description" content="Free UK take-home pay calculator for 2026-27: income tax, National Insurance and pension.">
+<link rel="stylesheet" href="../style.css">
+<style>label{display:block;margin:12px 0 4px;font-weight:600}input{font:inherit;padding:8px;width:100%;max-width:260px}
+table{border-collapse:collapse;width:100%;margin-top:12px}td{padding:8px;border-bottom:1px solid #8884}td:last-child{text-align:right}</style>
+</head><body><header><a href="../index.html">Compliance Kits</a></header><main>
+<h1>Take-home pay calculator 2026-27</h1>
+<p class="lede">For employees in England, Wales and Northern Ireland. Free, with no sign-up, and nothing you enter leaves your browser.</p>
+<div class="card">
+<label for="gross">Annual salary before tax (£)</label><input id="gross" type="number" inputmode="decimal" min="0" step="100" value="35000">
+<label for="pension">Pension via salary sacrifice (% of salary)</label><input id="pension" type="number" min="0" max="100" step="0.5" value="0">
+<table aria-live="polite"><tbody id="out"></tbody></table></div>
+<p class="note">Uses 2026-27 rates: £12,570 personal allowance (reduced by £1 for every £2 over £100,000), 20% / 40% / 45% income tax, 8% / 2% employee National Insurance. It doesn't cover student loans, Scottish tax rates, benefits in kind or tax-code adjustments. This is an estimate, not tax advice. Rates checked 25 September 2026.</p>
+<div class="card"><strong>Self-employed?</strong> Making Tax Digital quarterly updates apply to incomes over £50,000. <a href="../mtd.html">Keep your records with the MTD Ready workbook →</a></div>
+</main>
+<script src="takehome.js"></script>
+<script>
+const fmt = (n) => n.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
+function render() {
+  const g = Math.max(0, Number(document.getElementById('gross').value) || 0);
+  const r = takeHome(g, { pensionPct: Number(document.getElementById('pension').value) || 0 });
+  document.getElementById('out').innerHTML = [
+    ['Salary', r.gross], ['Pension (salary sacrifice)', -r.pension], ['Income tax', -r.tax],
+    ['National Insurance', -r.ni], ['Take-home per year', r.net], ['Take-home per month', r.monthly],
+  ].map(([k, v], i) => `<tr${i > 3 ? ' style="font-weight:700"' : ''}><td>${k}</td><td>${fmt(v)}</td></tr>`).join('');
+}
+document.querySelectorAll('input').forEach((el) => el.addEventListener('input', render));
+render();
+</script></body></html>

@@ -17,9 +17,7 @@ def placeholders(shop):
     return {
         "SELLER_LEGAL_NAME": shop.get("seller_legal_name"),
         "CONTACT_EMAIL": shop.get("contact_email"),
-        "PAYMENT_LINK_MTD": links.get("mtd"),
-        "PAYMENT_LINK_LANDLORD": links.get("landlord"),
-        "PAYMENT_LINK_A11Y": links.get("a11y"),
+        **{f"PAYMENT_LINK_{k.upper()}": v for k, v in links.items()},
     }
 
 
@@ -33,8 +31,8 @@ def build():
         if k.startswith("PAYMENT_LINK") and not v.startswith("https://"):
             sys.exit(f"{k} must be an https:// link")
     shutil.rmtree(OUT, ignore_errors=True)
-    shutil.copytree(SRC, OUT, ignore=shutil.ignore_patterns("build.py", "covers"))
-    for page in OUT.glob("*.html"):
+    shutil.copytree(SRC, OUT, ignore=shutil.ignore_patterns("build.py", "*.test.js"))
+    for page in OUT.rglob("*.html"):
         text = page.read_text()
         for k, v in values.items():
             text = text.replace(k, v)
