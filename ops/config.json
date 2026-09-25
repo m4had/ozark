@@ -1,0 +1,11 @@
+{
+  "_comment": "Owner-set limits. null = not yet set by owner -> ALL spend is blocked until filled in.",
+  "currency": "GBP",
+  "monthly_budget_gbp": null,
+  "per_experiment_budget_gbp": null,
+  "single_spend_approval_threshold_gbp": null,
+  "scale_roi_threshold": null,
+  "tax_set_aside_rate": 0.40,
+  "_tax_comment": "Owner said assume 20-40% until confirmed; using the conservative 40% end.",
+  "payout_address_on_file": null
+}
