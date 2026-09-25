@@ -32,3 +32,4 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,P,action,other,0.00,Built + tested (wave 2); £0 spend,
 2026-09-25,Q,action,other,0.00,Built + tested (wave 2); £0 spend,
 2026-09-25,_operator,action,other,0.00,"Added terms/returns, privacy/cookies and contact pages after own legal-check flagged them missing",
+2026-09-25,_operator,action,other,0.00,"PR #2 merged; Pages run 36185421925 success. Streams J-Q live, kill clocks start 2026-09-25",
