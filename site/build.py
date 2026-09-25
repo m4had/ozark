@@ -32,7 +32,7 @@ def build():
         sys.exit("Not building. Missing: " + "; ".join(problems))
     shop, crypto, catalog = cfg["shop"], cfg["crypto_checkout"], cfg["catalog"]
     shutil.rmtree(OUT, ignore_errors=True)
-    shutil.copytree(SRC, OUT, ignore=shutil.ignore_patterns("build.py", "*.test.js"))
+    shutil.copytree(SRC, OUT, ignore=shutil.ignore_patterns("*.py", "*.test.js"))
     (OUT / "dl").mkdir()
     products = {}
     for key, p in catalog.items():

@@ -20,3 +20,15 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,_operator,action,other,0.00,"Owner: all payments in USDC direct to 0xE527...8a25, skip payment-account steps. Built crypto checkout (Base USDC, browser verification); site build gated on seller details + network confirmation",owner chat 2026-09-25
 2026-09-25,_operator,action,other,0.00,Owner supplied trading name kingfish77 + contact email; asked for free hosting (GitHub Pages),
 2026-09-25,_operator,action,other,0.00,Owner confirmed Coinbase Wallet receives USDC on Base; seller address added; site build passes; merging to main to deploy via GitHub Pages,owner chat 2026-09-25
+2026-09-25,_operator,action,other,0.00,"Site deployed to https://m4had.github.io/ozark/ (Pages run 36181833360 success). Streams A-I, L live; kill clocks start 2026-09-25",
+2026-09-25,_operator,action,other,0.00,"Owner: 'carry on with all 30 plans'. Unblocked J (written course PDF), K (newsletter on site + RSS), M (developers page); added sitemap, canonical/OG tags",owner chat 2026-09-25
+2026-09-25,J,action,other,0.00,Built; goes live on next deploy,
+2026-09-25,K,action,other,0.00,Built; goes live on next deploy,
+2026-09-25,M,action,other,0.00,Built; goes live on next deploy,
+2026-09-25,_operator,action,other,0.00,"Built private owner portal (claude.ai artifact, db-backed): KPIs, cumulative chart, per-stream P&L + kill clocks, entry log, 30-plan pipeline. Seeded 13 streams, 30 ideas, settings",
+2026-09-25,_operator,action,other,0.00,"Owner: 'create another 250 plans, build and deploy'. Scored 250 (ops/data/ideas_wave2.csv: 25 A, 105 B, 100 C, 20 rejected). Built top 8 as streams N-Q; rest queued behind kill criteria (no mass-build: hard rule 1)",owner chat 2026-09-25
+2026-09-25,N,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,O,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,P,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,Q,action,other,0.00,Built + tested (wave 2); £0 spend,
+2026-09-25,_operator,action,other,0.00,"Added terms/returns, privacy/cookies and contact pages after own legal-check flagged them missing",

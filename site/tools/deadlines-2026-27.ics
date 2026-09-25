@@ -1,0 +1,78 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Compliance Kits//UK tax deadlines//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:UK tax deadlines 2026-27
+BEGIN:VEVENT
+UID:20261107-678200038@m4had.github.io
+DTSTAMP:20260925T200000Z
+DTSTART;VALUE=DATE:20261107
+SUMMARY:MTD quarterly update 2 due
+DESCRIPTION:Check gov.uk for your circumstances. From m4had.github.io/ozark
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:MTD quarterly update 2 due in 7 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270131-1187188896@m4had.github.io
+DTSTAMP:20260925T200000Z
+DTSTART;VALUE=DATE:20270131
+SUMMARY:Self Assessment 2025-26 return + payment; 1st payment on account 2026-27
+DESCRIPTION:Check gov.uk for your circumstances. From m4had.github.io/ozark
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Self Assessment 2025-26 return + payment; 1st payment on account 2026-27 in 7 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270207-353151830@m4had.github.io
+DTSTAMP:20260925T200000Z
+DTSTART;VALUE=DATE:20270207
+SUMMARY:MTD quarterly update 3 due
+DESCRIPTION:Check gov.uk for your circumstances. From m4had.github.io/ozark
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:MTD quarterly update 3 due in 7 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270507-2804709190@m4had.github.io
+DTSTAMP:20260925T200000Z
+DTSTART;VALUE=DATE:20270507
+SUMMARY:MTD quarterly update 4 due
+DESCRIPTION:Check gov.uk for your circumstances. From m4had.github.io/ozark
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:MTD quarterly update 4 due in 7 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270731-1006827457@m4had.github.io
+DTSTAMP:20260925T200000Z
+DTSTART;VALUE=DATE:20270731
+SUMMARY:2nd payment on account 2026-27
+DESCRIPTION:Check gov.uk for your circumstances. From m4had.github.io/ozark
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:2nd payment on account 2026-27 in 7 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280131-513926109@m4had.github.io
+DTSTAMP:20260925T200000Z
+DTSTART;VALUE=DATE:20280131
+SUMMARY:MTD final declaration 2026-27 + balancing payment
+DESCRIPTION:Check gov.uk for your circumstances. From m4had.github.io/ozark
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:MTD final declaration 2026-27 + balancing payment in 7 days
+END:VALARM
+END:VEVENT
+END:VCALENDAR
