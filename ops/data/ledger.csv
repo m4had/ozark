@@ -25,3 +25,4 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,J,action,other,0.00,Built; goes live on next deploy,
 2026-09-25,K,action,other,0.00,Built; goes live on next deploy,
 2026-09-25,M,action,other,0.00,Built; goes live on next deploy,
+2026-09-25,_operator,action,other,0.00,"Built private owner portal (claude.ai artifact, db-backed): KPIs, cumulative chart, per-stream P&L + kill clocks, entry log, 30-plan pipeline. Seeded 13 streams, 30 ideas, settings",
