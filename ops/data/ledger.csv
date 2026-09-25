@@ -40,3 +40,4 @@ date,stream,kind,category,amount_gbp,description,approval_ref
 2026-09-25,_operator,action,other,0.00,"PR #4 merged; Pages run 36188166659 success; IndexNow HTTP 200. Streams R-W live, kill clocks start 2026-09-25",
 2026-09-25,_operator,action,other,0.00,Owner: 'add google search console'. Added config slot + build support for GSC verification (meta tag or HTML file); waiting on owner's code,owner chat 2026-09-25
 2026-09-25,_operator,action,other,0.00,Added owner's Google Search Console verification tag,
+2026-09-25,_operator,action,other,0.00,PR #5 merged; Pages deploy with Google Search Console tag succeeded (run 36189279284). Owner to click Verify + submit sitemap.xml,
