@@ -230,7 +230,7 @@
  {
   "id": "T",
   "name": "First-Let Landlord Pack (PDF)",
-  "idea": "W096,W097",
+  "idea": "W097,W098",
   "status": "built; live on next deploy",
   "launched": null,
   "price_gbp": 7,
@@ -254,7 +254,7 @@
  {
   "id": "V",
   "name": "Email authentication setup service",
-  "idea": "W171",
+  "idea": "W155",
   "status": "built; live on next deploy",
   "launched": null,
   "price_gbp": 99,
@@ -266,7 +266,7 @@
  {
   "id": "W",
   "name": "GitHub Action: accessibility scan (free)",
-  "idea": "W166",
+  "idea": "W175",
   "status": "built; live on next deploy",
   "launched": null,
   "price_gbp": 0,
