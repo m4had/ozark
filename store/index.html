@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omega | Everything, from A to Ω</title>
+  <meta name="description" content="Clothing, home, kitchen, beauty, tech and more. Shop everything in one place with free delivery over £50.">
+  <link rel="icon" href="logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,750&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="./" aria-label="Omega home">
+        <svg class="logo-mark" viewBox="0 0 40 34" aria-hidden="true"><path d="M4 31 H13 V26.5 A13 13 0 1 1 27 26.5 V31 H36" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linejoin="round"/></svg>
+        <span class="logo-word" data-brand>Omega</span>
+      </a>
+
+      <form class="search" id="search-form" role="search">
+        <label class="visually-hidden" for="search-cat">Category</label>
+        <select id="search-cat"><option value="">All categories</option></select>
+        <label class="visually-hidden" for="search-q">Search products</label>
+        <input id="search-q" type="search" placeholder="Search for anything" autocomplete="off">
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        </button>
+      </form>
+
+      <nav class="main-nav" aria-label="Main">
+        <a href="#best">Best sellers</a>
+        <a href="#categories">Categories</a>
+        <a href="#offer">Deals</a>
+        <a href="#journal" data-journal-link>Journal</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-btn" id="account-link" href="#" aria-label="Your account">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+        </a>
+        <button class="icon-btn cart-btn" id="cart-open" aria-label="Open basket">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart-count" id="cart-count" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="demo-bar" id="demo-bar" hidden>
+    Demo mode: these are sample products. Connect Shopify in <code>config.js</code> to show your real catalogue and take payments.
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Everything,<br>from A to Ω.</h1>
+          <p>Clothing, home, kitchen, beauty, tech and more. Picked for quality, priced fairly and sent out fast.</p>
+          <a class="btn btn-primary" href="#best">Start shopping</a>
+        </div>
+        <div class="hero-arch" id="hero-arch" aria-hidden="true"></div>
+      </div>
+      <div class="wrap">
+        <ul class="benefits">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+            <div><strong>Free delivery over <span data-free-over>£50</span></strong><span>Tracked UK delivery, usually in 2–3 working days.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v5h5"/></svg>
+            <div><strong>30-day returns</strong><span>Changed your mind? Send it back within 30 days.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <div><strong>Secure checkout</strong><span>Pay by card, Apple Pay, Google Pay or Shop Pay.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="results" hidden aria-live="polite">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="results-title">Results</h2>
+          <button class="btn btn-ghost" id="results-clear" type="button">Clear</button>
+        </div>
+        <div class="product-grid" id="results-grid"></div>
+        <p class="empty" id="results-empty" hidden></p>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Shop by category</h2>
+          <div class="scroller-btns">
+            <button class="round-btn" data-scroll="-1" aria-label="Previous categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="round-btn" data-scroll="1" aria-label="Next categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="category-row" id="category-row"></div>
+      </div>
+    </section>
+
+    <section class="section" id="best">
+      <div class="wrap">
+        <div class="section-head"><h2>Best sellers</h2></div>
+        <div class="product-grid" id="best-grid"></div>
+      </div>
+    </section>
+
+    <section class="offer" id="offer">
+      <div class="wrap offer-inner">
+        <div class="offer-mark" aria-hidden="true">Ω</div>
+        <div class="offer-copy">
+          <h2>10% off your first order</h2>
+          <p>Join the list for new arrivals and members-only deals. One or two emails a month, never more.</p>
+        </div>
+        <form class="offer-form" id="offer-form">
+          <label class="visually-hidden" for="offer-email">Email address</label>
+          <input id="offer-email" type="email" required placeholder="Your email address" autocomplete="email">
+          <button class="btn btn-light" type="submit">Get my code</button>
+          <p class="form-note" id="offer-note" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="new">
+      <div class="wrap">
+        <div class="section-head"><h2>New in</h2></div>
+        <div class="product-grid" id="new-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews" hidden>
+      <div class="wrap">
+        <div class="section-head"><h2>What customers say</h2></div>
+        <div class="review-row" id="review-row"></div>
+      </div>
+    </section>
+
+    <section class="section" id="journal">
+      <div class="wrap">
+        <div class="section-head"><h2>From the journal</h2></div>
+        <div class="journal-grid" id="journal-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="logo logo-light" href="./" aria-label="Omega home">
+          <svg class="logo-mark" viewBox="0 0 40 34" aria-hidden="true"><path d="M4 31 H13 V26.5 A13 13 0 1 1 27 26.5 V31 H36" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linejoin="round"/></svg>
+          <span class="logo-word" data-brand>Omega</span>
+        </a>
+        <p>Everything, from A to Ω.</p>
+        <div class="socials" id="socials"></div>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <ul id="footer-cats"></ul>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#" data-policy="shipping-policy">Delivery</a></li>
+          <li><a href="#" data-policy="refund-policy">Returns and refunds</a></li>
+          <li><a href="#" id="contact-link">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#" data-policy="privacy-policy">Privacy policy</a></li>
+          <li><a href="#" data-policy="terms-of-service">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>© <span id="year"></span> <span data-brand>Omega</span>. All rights reserved.</span>
+      <span>Payments handled securely by Shopify.</span>
+    </div>
+  </footer>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="pd-title">
+    <button class="dialog-close" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="pd-grid">
+      <div class="pd-media" id="pd-media"></div>
+      <div class="pd-info">
+        <p class="pd-cat" id="pd-cat"></p>
+        <h2 id="pd-title"></h2>
+        <p class="pd-price" id="pd-price"></p>
+        <p class="pd-desc" id="pd-desc"></p>
+        <div id="pd-options"></div>
+        <div class="pd-buy">
+          <div class="qty" aria-label="Quantity">
+            <button type="button" data-qty="-1" aria-label="Decrease quantity">−</button>
+            <span id="pd-qty">1</span>
+            <button type="button" data-qty="1" aria-label="Increase quantity">+</button>
+          </div>
+          <button class="btn btn-primary" id="pd-add" type="button">Add to basket</button>
+        </div>
+        <p class="pd-stock" id="pd-stock"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Basket" aria-hidden="true" inert>
+    <div class="drawer-head">
+      <h2>Your basket</h2>
+      <button class="dialog-close" id="cart-close" aria-label="Close basket">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="free-meter" id="free-meter"></div>
+    <ul class="cart-lines" id="cart-lines"></ul>
+    <div class="cart-empty" id="cart-empty">
+      <p>Your basket is empty.</p>
+      <a class="btn btn-ghost" href="#best" data-close-cart>Browse best sellers</a>
+    </div>
+    <div class="drawer-foot" id="cart-foot">
+      <div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">£0.00</strong></div>
+      <p class="fine">Delivery and any discount codes are added at checkout.</p>
+      <button class="btn btn-primary btn-block" id="checkout-btn" type="button">Check out</button>
+      <p class="form-note" id="checkout-note" role="status"></p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="art.js"></script>
+  <script src="demo-data.js"></script>
+  <script src="shopify.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
